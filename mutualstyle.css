@@ -1,6 +1,6 @@
 /* mobile-first */
 
-body {
+html {
   background-image: linear-gradient(#35524a, #23281b, #0e100b);
   background-size: cover;
 }
@@ -27,10 +27,19 @@ p {
   font-size: 16px;
 }
 
+footer h2 {
+  /* font-family: Optima (skal downloades); */
+  font-size: 16px;
+}
+footer h3 {
+  /* font-family: Optima (skal downloades); */
+  font-size: 12px;
+}
+
 /* web-format */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   h1 {
-    font-size: 180px;
+    font-size: 140px;
   }
   h2 {
     font-size: 70px;
@@ -40,5 +49,11 @@ p {
   }
   p {
     font-size: 25px;
+  }
+  footer h2 {
+    font-size: 30px;
+  }
+  footer h3 {
+    font-size: 20px;
   }
 }
