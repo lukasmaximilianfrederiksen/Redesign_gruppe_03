@@ -28,9 +28,9 @@ p {
 }
 
 /* web-format */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   h1 {
-    font-size: 180px;
+    font-size: 160px;
   }
   h2 {
     font-size: 70px;
