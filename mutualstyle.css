@@ -9,6 +9,11 @@ img {
   width: 100%;
   height: auto;
 }
+
+h1 {
+  /* font-family: Hoefler Text (skal downloades); */
+  font-size: 50px;
+}
 h2 {
   /* font-family: Optima (skal downloades); */
   font-size: 35px;
@@ -24,6 +29,9 @@ p {
 
 /* web-format */
 @media (min-width: 600px) {
+  h1 {
+    font-size: 180px;
+  }
   h2 {
     font-size: 70px;
   }
