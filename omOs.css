@@ -1,10 +1,63 @@
+body {
+  background-image: linear-gradient(#35524a, #23281b, #0e100b);
+  background-size: cover;
+}
+
+body h2 {
+  text-align: center;
+  color: #fff;
+}
+body p {
+  color: #fff;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 #first_section {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(6, 1fr);
   width: 100%;
   height: 100vh;
-  background-image: url(img/omOs/placeholder.png);
+  background-image: url(img/omOs_billeder/placeholder.png);
   background-size: cover;
   place-content: start;
+}
+
+@media (orientation: portrait) and (min-width: 400px) {
+  #first_section {
+    width: 100%;
+    height: 56.25vw;
+  }
+}
+
+@media (min-width: 800px) {
+  .box {
+    grid-row: 3 / span 2;
+    grid-column: 6 / span 2;
+    width: 320px;
+    height: 400px;
+    padding: 30px;
+    border-radius: 35px;
+    background-color: #2d4137;
+    opacity: 51%;
+  }
+
+  #second_section h2 {
+    text-align: left;
+  }
+
+  #third_section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #third_section img {
+    grid-column: 3 / span 2;
+  }
 }
