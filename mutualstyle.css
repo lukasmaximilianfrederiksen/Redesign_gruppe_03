@@ -14,9 +14,11 @@ img {
 /*********** Header ***********/
 
 header {
+  /*udkommenter display: flex for overflow ***/
+
   display: flex;
   background-color: #202020;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: baseline;
 }
 header ul {
@@ -27,13 +29,10 @@ header ul {
 
 header nav ul {
   display: flex;
-
   margin: 10px;
-
   padding-bottom: 0.5rem;
   gap: 35px;
   overflow-x: auto;
-
   font-size: 20px;
 }
 
@@ -113,7 +112,7 @@ footer h3 {
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: black;
+  background-color: #202020;
 }
 .kontakt_wrapper {
   margin: 0 auto;
@@ -122,6 +121,16 @@ footer {
 .socialmedia_wrapper {
   margin: 0 auto;
   white-space: nowrap;
+}
+
+#logo img {
+  max-width: 2rem;
+}
+
+#logo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 footer h2 {
@@ -133,6 +142,13 @@ footer h2 {
 footer h3,
 h4 {
   color: white;
+}
+
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 /* web-format */
@@ -154,5 +170,15 @@ h4 {
   }
   footer h3 {
     font-size: 20px;
+  }
+
+  #logo img {
+    max-width: 3rem;
+  }
+
+  #logo {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
   }
 }
