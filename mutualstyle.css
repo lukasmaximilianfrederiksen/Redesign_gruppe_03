@@ -4,15 +4,87 @@ html {
   background-image: linear-gradient(#35524a, #23281b, #0e100b);
   background-size: cover;
 }
+
 img {
   display: block;
   width: 100%;
   height: auto;
 }
 
+/*********** Header ***********/
+
+header {
+  display: flex;
+  background-color: #202020;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+header ul {
+  justify-content: space-between;
+
+  text-decoration: none;
+}
+
+header nav ul {
+  display: flex;
+
+  margin: 10px;
+
+  padding-bottom: 0.5rem;
+  gap: 35px;
+  overflow-x: auto;
+
+  font-size: 20px;
+}
+
+header ul a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+header nav ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.4s;
+}
+
+header nav ul li:hover::after {
+  width: 100%;
+}
+
+h1 {
+  font-size: 40px;
+  background-image: linear-gradient(
+    to right,
+    #ada9a4,
+    #c4c4c3,
+    #d3b9a2,
+    #f4b888,
+    #ed9f72,
+    #a6654e
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/********* Tekst ***************/
+
 h1 {
   /* font-family: Hoefler Text (skal downloades); */
-  font-size: 50px;
+  font-size: 45px;
 }
 h2 {
   /* font-family: Optima (skal downloades); */
@@ -24,8 +96,10 @@ h3 {
 }
 p {
   /* font-family: Montserrat (skal downloades); */
-  font-size: 16px;
+  font-size: 15px;
 }
+
+/****************** Footer ********************/
 
 footer h2 {
   /* font-family: Optima (skal downloades); */
@@ -36,19 +110,44 @@ footer h3 {
   font-size: 12px;
 }
 
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: black;
+}
+.kontakt_wrapper {
+  margin: 0 auto;
+}
+
+.socialmedia_wrapper {
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+footer h2 {
+  color: white;
+  border-bottom: 1px solid #fff;
+  width: 30%;
+  text-align: center;
+}
+footer h3,
+h4 {
+  color: white;
+}
+
 /* web-format */
 @media (min-width: 800px) {
   h1 {
-    font-size: 140px;
+    font-size: 60px;
   }
   h2 {
-    font-size: 70px;
+    font-size: 45px;
   }
   h3 {
-    font-size: 40px;
+    font-size: 35px;
   }
   p {
-    font-size: 25px;
+    font-size: 15px;
   }
   footer h2 {
     font-size: 30px;
