@@ -3,7 +3,12 @@
 html {
   height: 100%;
   background-image: linear-gradient(#35524a, #23281b, #0e100b);
+
+  /* Løsning fundet på stackoverflow https://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats */
+
+  /* Sørger for at der kun blive vist en enkel gradient der dækker 100% af siden height */
   background-repeat: no-repeat;
+  /* Sørger for at baggrunden ikke følger med scroll, men forbliver en fixed størrelse */
   background-attachment: fixed;
 }
 
