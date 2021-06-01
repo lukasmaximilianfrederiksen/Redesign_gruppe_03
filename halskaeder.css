@@ -4,123 +4,77 @@ img {
   height: auto;
 }
 
-
 body {
   margin: 0;
 }
-main {
-  display: grid;
-  grid-template-columns: 1fr minmax(0, 1000px) 1fr;
-}
-#halskaeder {
-  grid-column: 2/3;
-}
-/* ----------------- overskrift ----------------- */
-#section_overskrift {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-content: center;
-  margin: 40px;
-}
-#overskrift_h2 {
-  grid-column: 2/3;
-  color: white;
-  text-align: center;
-}
-/* ------------- sektioner med halskæder --------------- */
 
-/* --- section 1 ----- */
-#halskaeder_section1 {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(7, 1fr);
-}
-
-.produktbillede {
-  grid-column: 1/5;
-  grid-row: 1/6;
-}
-
-#produkttekst1 {
-  grid-column: 5/8;
-  grid-row: 1/5;
-  padding: 60px;
-  color: white;
-}
-
-.modelbillede {
-  grid-column: 4/8;
-  grid-row: 4/9;
-}
-
-/* ---- section 2 ---- */
-
-#halskaeder_section2 {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(7, 1fr);
-}
-
-#produkttekst2 {
-  grid-column: 1/4;
-  grid-row: 1/4;
-  padding: 60px;
-  color: white;
-}
-
-.produktbillede2 {
-  grid-column: 4/8;
-  grid-row: 1/6;
-}
-
-.modelbillede2 {
-  grid-column: 1/5;
-  grid-row: 4/8;
-}
-
-
-@media only screen and (max-width: 600px) {
+@media (min-width: 600px) {
   main {
     display: grid;
     grid-template-columns: 1fr minmax(0, 1000px) 1fr;
+  }
 
   #halskaeder {
     grid-column: 2/3;
   }
-}
-#section_overskrift {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-content: center;
-  margin: 40px;
-}
-#overskrift_h2 {
-  grid-column: 2/3;
-  color: white;
-  text-align: center;
-}
 
-#halskaeder_section1 {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(7, 1fr);
+  #section_overskrift {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-content: center;
+    margin: 40px;
+  }
+  #overskrift_h2 {
+    grid-column: 2/3;
+    color: white;
+    text-align: center;
+  }
+
+  #halskaeder_section1 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+  }
+
+  .produktbillede {
+    grid-column: 1/5;
+    grid-row: 1/6;
+  }
+
+  #produkttekst1 {
+    grid-column: 5/8;
+    grid-row: 1/5;
+    padding: 60px;
+    color: white;
+  }
+
+  .modelbillede {
+    grid-column: 4/8;
+    grid-row: 4/9;
+  }
+
+  /* ---- section 2 ---- */
+
+  #halskaeder_section2 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+  }
+
+  #produkttekst2 {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    padding: 60px;
+    color: white;
+  }
+
+  .produktbillede2 {
+    grid-column: 4/8;
+    grid-row: 1/6;
+  }
+
+  .modelbillede2 {
+    grid-column: 1/5;
+    grid-row: 4/8;
+  }
 }
-
-.produktbillede {
-  grid-column: 1/5;
-  grid-row: 1/6;
-}
-
-#produkttekst1 {
-  grid-column: 5/8;
-  grid-row: 1/5;
-  padding: 60px;
-  color: white;
-}
-
-.modelbillede {
-  grid-column: 4/8;
-  grid-row: 4/9;
-}
-
-
