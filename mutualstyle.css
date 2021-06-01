@@ -27,7 +27,7 @@ header {
   background-color: #202020;
   justify-content: space-around;
   align-items: baseline;
-  height: 120px;
+  height: 200px;
 }
 header ul {
   text-decoration: none;
@@ -35,11 +35,13 @@ header ul {
 
 header nav ul {
   /* display: flex; */
+  display: inline-block;
   margin: 10px;
   padding-bottom: 0.5rem;
   gap: 35px;
   overflow-x: auto;
   font-size: 20px;
+  height: 130px;
 }
 
 header ul a {
@@ -103,6 +105,53 @@ h3 {
 p {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
+}
+/* ............dropdown-menu.......... */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 5px 5px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #202020;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 60px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /****************** Footer ********************/
