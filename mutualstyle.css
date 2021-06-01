@@ -2,6 +2,10 @@
   font-family: Hoefler Text;
   src: url(webfontkit-20210601-064621/hoefler_text_regular-webfont.woff2);
 }
+@font-face {
+  font-family: Optima;
+  src: url(webfontkit-optima/unicode.optima-webfont.woff2);
+}
 
 /* mobile-first */
 
@@ -99,11 +103,11 @@ h1 {
   font-size: 45px;
 }
 h2 {
-  /* font-family: Optima (skal downloades); */
+  font-family: Optima;
   font-size: 35px;
 }
 h3 {
-  /* font-family: Optima (skal downloades); */
+  font-family: Optima;
   font-size: 25px;
 }
 p {
