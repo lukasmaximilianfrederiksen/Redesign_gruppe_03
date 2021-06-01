@@ -113,7 +113,7 @@ h1 {
 h2 {
   font-family: Optima;
   font-size: 35px;
-  margin: 5%;
+  margin: 10px;
   color: white;
 }
 h3 {
@@ -190,7 +190,7 @@ h4 {
 /* web-format */
 @media (min-width: 800px) {
   h1 {
-    font-size: 60px;
+    font-size: 80px;
   }
   h2 {
     font-size: 45px;
