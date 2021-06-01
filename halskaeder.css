@@ -27,6 +27,6 @@ p {
 }
 
 .modelbillede {
-  grid-column: 5/7;
+  grid-column: 5/8;
   grid-row: 3;
 }
