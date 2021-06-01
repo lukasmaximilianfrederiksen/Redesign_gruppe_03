@@ -16,6 +16,7 @@
 html {
   height: 100%;
   background-image: linear-gradient(#35524a, #23281b, #0e100b);
+  background-size: cover;
 
   /* Løsning fundet på stackoverflow https://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats */
 
@@ -113,31 +114,48 @@ h1 {
 h1 {
   font-family: Hoefler Text;
   font-size: 45px;
+  margin: 5%;
+  color: white;
 }
 h2 {
   font-family: Optima;
   font-size: 35px;
+  margin: 5%;
+  color: white;
 }
 h3 {
   font-family: Optima;
   font-size: 25px;
+  margin: 5%;
+  color: white;
+}
+h4 {
+  font-family: "Montserrat", sans-serif;
+  margin: 5%;
+  color: white;
 }
 p {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
+  margin: 5%;
+  color: white;
 }
 /* ............dropdown-menu.......... */
 
 /****************** Footer ********************/
 
 footer h2 {
-  /* font-family: Optima (skal downloades); */
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: underline white;
+  color: white;
 }
 footer h3 {
-  /* font-family: Optima (skal downloades); */
+  font-size: 14px;
+  color: white;
+}
+footer h4 {
   font-size: 12px;
+  color: white;
 }
 
 footer {
@@ -187,6 +205,7 @@ h4 {
   h3 {
     font-size: 35px;
   }
+
   p {
     font-size: 15px;
   }
@@ -195,6 +214,9 @@ h4 {
   }
   footer h3 {
     font-size: 20px;
+  }
+  footer h4 {
+    font-size: 15px;
   }
 
   #logo img {

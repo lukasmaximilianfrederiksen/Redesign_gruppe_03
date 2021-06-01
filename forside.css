@@ -40,7 +40,7 @@ p {
 @media (min-width: 800px) {
   h2 {
     padding-top: 0%;
-    padding-bottom: 10%;
+
     color: white;
     margin: 0%;
   }
@@ -55,15 +55,61 @@ p {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 30px;
-    margin: 6rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 6rem;
   }
 
   .Forside_tekst_topSection {
-    grid-column: 2/3;
-    padding-right: 30%;
+    grid-column: 1/3;
   }
 
   .Forside_billede_topSection {
     grid-column: 4/7;
+  }
+
+  .Forside_midSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 30px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .Forside_leftSide_midSection_text {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .Forside_leftSide_midSection_img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .Forside_rightSide_midSection_text {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .Forside_rightSide_midSection_img {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .Forside_bottomSection {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  #Forside_bottomSection_leftImage {
+    grid-column: 1;
+  }
+
+  #Forside_bottomSection_rightImage {
+    grid-column: 2;
   }
 }
