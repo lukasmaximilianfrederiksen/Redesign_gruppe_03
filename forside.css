@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+/* 586 PIXEL SKIFTER HEADER tekst */
+@media (min-width: 580px) {
+}
+
+@media (min-width: 800px) {
+  .Forside_topSection {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 30px;
+    margin: 6rem;
+  }
+  .Forside_tekst_topSection {
+    grid-column: 6/8;
+    padding-right: 30%;
+  }
+
+  .Forside_billede_topSection {
+    grid-column: 1/5;
+  }
+}
