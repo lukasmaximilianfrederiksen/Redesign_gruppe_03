@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  box-sizing: border-box;
+  top: 0;
 }
 
 @font-face {
@@ -26,8 +28,7 @@ html {
   background-attachment: fixed;
 }
 
-img,
-video {
+img {
   display: block;
   width: 100%;
   height: auto;
@@ -38,21 +39,21 @@ video {
 header {
   display: flex;
   background-color: #202020;
-  justify-content: space-around;
   align-items: baseline;
-  height: 150px;
+  height: 8vh;
+  position: sticky;
 }
+
 header ul {
   text-decoration: none;
 }
 
 header nav ul {
   display: flex;
-  margin: 10px;
   padding-bottom: 0.5rem;
   gap: 35px;
-  overflow-x: auto;
-  font-size: 20px;
+  /* overflow-x: auto; */
+  font-size: 16px;
 }
 
 header ul a {
@@ -63,18 +64,16 @@ header ul a {
 
 nav ul li {
   display: inline-block;
-  margin: 0 20px;
+  /* margin: 0 20px; */
   position: relative;
 }
 
 nav {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  /* padding: 15px; */
 }
 
-/*.... Hoover....*/
+/*.... Hover....*/
 
 header nav ul li::after {
   content: "";
@@ -113,7 +112,6 @@ h1 {
 h1 {
   font-family: Hoefler Text;
   font-size: 45px;
-  margin: 5%;
   color: white;
 }
 h2 {
@@ -195,8 +193,11 @@ h4 {
 
 /* web-format */
 @media (min-width: 800px) {
+  header {
+    height: 20vh;
+  }
   h1 {
-    font-size: 80px;
+    font-size: 110px;
   }
   h2 {
     font-size: 45px;
