@@ -36,13 +36,11 @@ video {
 /*********** Header ***********/
 
 header {
-  /*udkommenter display: flex for overflow ***/
-
   display: flex;
   background-color: #202020;
   justify-content: space-around;
   align-items: baseline;
-  height: 200px;
+  height: 150px;
 }
 header ul {
   text-decoration: none;
@@ -55,7 +53,6 @@ header nav ul {
   gap: 35px;
   overflow-x: auto;
   font-size: 20px;
-  height: 130px;
 }
 
 header ul a {
@@ -69,6 +66,15 @@ nav ul li {
   margin: 0 20px;
   position: relative;
 }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+/*.... Hoover....*/
 
 header nav ul li::after {
   content: "";
@@ -113,7 +119,7 @@ h1 {
 h2 {
   font-family: Optima;
   font-size: 35px;
-  margin: 5%;
+  margin: 10px;
   color: white;
 }
 h3 {
@@ -190,7 +196,7 @@ h4 {
 /* web-format */
 @media (min-width: 800px) {
   h1 {
-    font-size: 60px;
+    font-size: 80px;
   }
   h2 {
     font-size: 45px;
