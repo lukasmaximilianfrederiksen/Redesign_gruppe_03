@@ -12,6 +12,7 @@ body {
 #overskrift_h2 {
   grid-column: 4/5;
   color: white;
+  padding: 22px;
 }
 
 .produktbillede {
