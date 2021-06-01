@@ -110,6 +110,7 @@ p {
 footer h2 {
   /* font-family: Optima (skal downloades); */
   font-size: 16px;
+  text-decoration: underline white;
 }
 footer h3 {
   /* font-family: Optima (skal downloades); */
@@ -140,12 +141,6 @@ footer {
   gap: 20px;
 }
 
-footer h2 {
-  color: white;
-  border-bottom: 1px solid #fff;
-  width: 30%;
-  text-align: center;
-}
 footer h3,
 h4 {
   color: white;
