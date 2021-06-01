@@ -20,6 +20,9 @@ p {
   padding-bottom: 10%;
 }
 
+.Forside_topSection {
+  margin-top: 10%;
+}
 .Forside_rightSide_midSection_text p {
   padding-top: 10%;
 }
@@ -30,7 +33,6 @@ p {
 
 .Forside_bottomSection {
   margin-top: 10%;
-  margin-bottom: 20%;
 }
 
 /* 586 PIXEL SKIFTER HEADER tekst */
@@ -70,7 +72,7 @@ p {
 
   .Forside_midSection {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: auto 1fr;
     gap: 30px;
     margin-left: 3rem;
@@ -99,7 +101,7 @@ p {
 
   .Forside_bottomSection {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(7, 1fr);
     gap: 30px;
     margin-left: 3rem;
     margin-right: 3rem;
