@@ -40,7 +40,7 @@ header {
   background-color: #202020;
   justify-content: space-around;
   align-items: baseline;
-  height: 200px;
+  height: 150px;
 }
 header ul {
   text-decoration: none;
@@ -53,7 +53,6 @@ header nav ul {
   gap: 35px;
   overflow-x: auto;
   font-size: 20px;
-  height: 130px;
 }
 
 header ul a {
