@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 @font-face {
   font-family: Hoefler Text;
   src: url(webfontkit-20210601-064621/hoefler_text_regular-webfont.woff2);
