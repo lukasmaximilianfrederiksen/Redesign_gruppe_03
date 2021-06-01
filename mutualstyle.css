@@ -218,6 +218,7 @@ h4 {
   .navbar a:hover,
   .dropdown:hover .dropbtn {
     background-color: #202020;
+    cursor: pointer;
   }
 
   .dropdown-content {
@@ -240,6 +241,7 @@ h4 {
 
   .dropdown-content a:hover {
     background-color: #ddd;
+    cursor: pointer;
   }
 
   .dropdown:hover .dropdown-content {
