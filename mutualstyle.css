@@ -35,8 +35,6 @@ video {
 /*********** Header ***********/
 
 header {
-  /*udkommenter display: flex for overflow ***/
-
   display: flex;
   background-color: #202020;
   justify-content: space-around;
@@ -68,6 +66,15 @@ nav ul li {
   margin: 0 20px;
   position: relative;
 }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+/*.... Hoover....*/
 
 header nav ul li::after {
   content: "";
