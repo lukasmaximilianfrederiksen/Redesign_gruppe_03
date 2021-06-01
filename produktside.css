@@ -1,6 +1,4 @@
-/************ Tekst ***************/
-
-/************* Main / body ***************/
+/* -------- mobile first ------ */
 h2 {
   color: white;
 }
@@ -15,8 +13,7 @@ img {
   width: 100%;
   height: auto;
 }
-
-/**************** Andet ****************/
+/* ------ desktop-version------- */
 @media (min-width: 600px) {
   main {
     display: grid;
