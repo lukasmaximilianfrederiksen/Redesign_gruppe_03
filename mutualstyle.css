@@ -35,7 +35,6 @@ header ul {
 
 header nav ul {
   /* display: flex; */
-  display: inline-block;
   margin: 10px;
   padding-bottom: 0.5rem;
   gap: 35px;
