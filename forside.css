@@ -9,20 +9,19 @@ img {
 }
 
 h2 {
+  padding-top: 10%;
   color: white;
+  margin: 5%;
 }
 
 p {
   color: white;
+  margin: 5%;
+  padding-bottom: 10%;
 }
 
-.Forside_topSection h2 {
-  padding-bottom: 5%;
-  margin-
-}
-
-.Forside_topSection p {
-    padding-
+.Forside_rightSide_midSection_text p {
+  padding-top: 10%;
 }
 
 /* 586 PIXEL SKIFTER HEADER tekst */
@@ -38,11 +37,11 @@ p {
   }
 
   .Forside_tekst_topSection {
-    grid-column: 6/8;
+    grid-column: 2/3;
     padding-right: 30%;
   }
 
   .Forside_billede_topSection {
-    grid-column: 1/5;
+    grid-column: 4/7;
   }
 }
