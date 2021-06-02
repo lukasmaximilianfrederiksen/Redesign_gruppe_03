@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  box-sizing: border-box;
+  top: 0;
 }
 
 @font-face {
@@ -26,8 +28,7 @@ html {
   background-attachment: fixed;
 }
 
-img,
-video {
+img {
   display: block;
   width: 100%;
   height: auto;
@@ -35,48 +36,75 @@ video {
 
 /*********** Header ***********/
 
-header {
+.h1Container {
   display: flex;
+}
+
+/*.... Burger menu....*/
+
+#burger_knap {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #202020;
-  justify-content: space-around;
-  align-items: baseline;
-  height: 150px;
-}
-header ul {
-  text-decoration: none;
-}
-
-header nav ul {
-  display: flex;
-  margin: 10px;
-  padding-bottom: 0.5rem;
-  gap: 35px;
-  overflow-x: auto;
-  font-size: 20px;
-}
-
-header ul a {
-  text-decoration: none;
-  list-style: none;
   color: white;
 }
 
-nav ul li {
-  display: inline-block;
-  margin: 0 20px;
-  position: relative;
+.logo {
+  font-size: 1.5rem;
+  margin: 0.5rem;
 }
 
-nav {
+.navbar_links ul {
+  margin: 0;
+  padding: 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px;
+  flex-direction: column;
 }
 
-/*.... Hoover....*/
+.navbar_links li {
+  list-style: none;
+  font-size: 1.5rem;
+}
 
-header nav ul li::after {
+.navbar_links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+#burger_knap {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+  transform: translateX(100%);
+}
+
+#menu {
+  transition: transform 0.3s;
+  transform-origin: right;
+}
+/*.... Hover....*/
+
+.navbar ul li::after {
   content: "";
   height: 3px;
   width: 0;
@@ -87,8 +115,14 @@ header nav ul li::after {
   transition: 0.4s;
 }
 
-header nav ul li:hover::after {
+.navbar ul li:hover::after {
   width: 100%;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
 }
 
 h1 {
@@ -113,7 +147,6 @@ h1 {
 h1 {
   font-family: Hoefler Text;
   font-size: 45px;
-  margin: 5%;
   color: white;
 }
 h2 {
@@ -139,6 +172,7 @@ p {
   margin: 5%;
   color: white;
 }
+
 /* ............dropdown-menu.......... */
 
 /****************** Footer ********************/
@@ -186,17 +220,37 @@ h4 {
   color: white;
 }
 
-@media (min-width: 600px) {
-  header {
+/* @media */
+
+@media (min-width: 500px) {
+  #burger_knap {
+    display: none;
+  }
+
+  #menu.hidden {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .navbar_links ul {
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: baseline;
+    flex-direction: row;
+  }
+
+  .navbar_links li {
+    list-style: none;
+    font-size: 1.5rem;
   }
 }
 
-/* web-format */
 @media (min-width: 800px) {
+  header {
+    height: 20vh;
+  }
   h1 {
-    font-size: 80px;
+    font-size: 110px;
   }
   h2 {
     font-size: 45px;
@@ -227,11 +281,11 @@ h4 {
     flex-direction: row;
     gap: 35px;
   }
+
   .dropdown {
     float: left;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
-
   .dropdown .dropbtn {
     font-size: 20px;
     border: none;
@@ -255,7 +309,7 @@ h4 {
     background-color: #f9f9f9;
     min-width: 60px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    /* z-index: 1; */
   }
 
   .dropdown-content a {

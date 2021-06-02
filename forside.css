@@ -2,7 +2,13 @@
   margin: 0;
 }
 
-@media (min-aspect-ratio: 16/9) {
+video {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+/* @media (min-aspect-ratio: 16/9) {
   video {
     width: 100%;
     height: auto;
@@ -14,7 +20,7 @@
     width: auto;
     height: 100%;
   }
-}
+} */
 
 img {
   display: block;
@@ -55,6 +61,7 @@ p {
 
 @media (min-width: 800px) {
   video {
+    background-size: cover;
   }
 
   h2 {

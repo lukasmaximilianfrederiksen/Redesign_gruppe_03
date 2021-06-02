@@ -7,6 +7,15 @@ img {
 body {
   margin: 0;
 }
+.knap {
+  margin: 5%;
+}
+.knap a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  list-style: none;
+  color: white;
+}
 
 @media (min-width: 600px) {
   main {
