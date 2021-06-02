@@ -142,6 +142,7 @@ p {
     gap: 30px;
     margin-left: 3rem;
     margin-right: 3rem;
+    margin-bottom: 10%;
   }
   .Forside_bottomSection h2 {
     margin-left: 3rem;
@@ -153,10 +154,4 @@ p {
   #Forside_bottomSection_rightImage {
     grid-column: 5/9;
   }
-}
-/****** Introduktionstekst - Cam *****/
-
-#introduktionstekst {
-  padding: 50px;
-  margin-top: -20px;
 }
