@@ -58,8 +58,8 @@ p {
     grid-area: 1 / 1 / 2 / 2;
     text-align: left;
   }
-  #second_section {
-    line-height: 25px;
+  #second_section p {
+    line-height: 20px;
   }
 
   #billede {
