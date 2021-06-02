@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
@@ -17,33 +17,31 @@
   </head>
   <body>
     <header>
-      <h1>jOUXli</h1>
-    <nav>
-        <ul>
-          <li><a href="index.html">Forside</a></li>
+      <nav class="navbar">
+        <div class="h1Container">
+          <h1>jOUXli</h1>
+        </div>
 
-          <li>
-            <div class="dropdown">
-            <button class="dropbtn">Smykker</button>
-            <div class="dropdown-content">
-              <a href="halskaeder.html">Halskæder</a>
-              <a href="halskaeder.html">Armbånd</a>
-              <a href="halskaeder.html">Ørestikkere</a>
-            </div></li>
-            
+        <div class="navbar_links">
+          <div id="burger_knap">
+            <p>Menu</p>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
           </div>
-          <li><a href="omOs.html">Om jOUXli</a></li>
-        </ul>
-      </nav>
 
+          <ul id="menu" class="hidden">
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="#">smykker</a></li>
+            <li><a href="omOs.html">Om jOUXli</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
- 
+
     <main>
       <div id="billede">
-        <img
-          src="img/omOs_billeder/portaet.jpeg"
-          alt="portræt placeholder"
-        />
+        <img src="img/omOs_billeder/portaet.jpeg" alt="portræt placeholder" />
       </div>
 
       <section id="first_section">
