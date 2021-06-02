@@ -36,14 +36,21 @@ img {
 
 /*********** Header ***********/
 
-.h1Container {
+/* .h1Container {
   display: flex;
-}
+} */
 
-/*.... Burger menu....*/
+/*.... Burger menu..*/
+
+/* Løsning fundet på: https://www.w3schools.com/howto/howto_css_menu_icon.asp */
 
 #burger_knap {
-  display: inline-block;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   cursor: pointer;
 }
 
@@ -65,7 +72,7 @@ img {
   color: white;
 }
 
-.logo {
+.brand_title {
   font-size: 1.5rem;
   margin: 0.5rem;
 }
@@ -90,7 +97,7 @@ img {
 }
 
 #burger_knap {
-  display: inline-block;
+  position: absolute;
 }
 
 .hidden {
@@ -102,6 +109,17 @@ img {
   transition: transform 0.3s;
   transform-origin: right;
 }
+
+.brand_title {
+  margin: 0.5rem;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
 /*.... Hover....*/
 
 .navbar ul li::after {
@@ -117,12 +135,6 @@ img {
 
 .navbar ul li:hover::after {
   width: 100%;
-}
-
-.navbar ul li {
-  display: inline-block;
-  margin: 0 20px;
-  position: relative;
 }
 
 h1 {
