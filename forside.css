@@ -154,3 +154,9 @@ p {
     grid-column: 5/9;
   }
 }
+/****** Introduktionstekst - Cam *****/
+
+#introduktionstekst {
+  padding: 50px;
+  margin-top: -20px;
+}
