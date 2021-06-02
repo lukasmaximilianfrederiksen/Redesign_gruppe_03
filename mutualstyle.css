@@ -36,7 +36,7 @@ img {
 
 /*********** Header ***********/
 
-header {
+.h1Container {
   display: flex;
 }
 
