@@ -85,8 +85,8 @@ p {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 30px;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
     margin-bottom: 6rem;
   }
 
@@ -107,8 +107,8 @@ p {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 2fr 1fr 2fr;
     gap: 30px;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
   }
 
   .Forside_leftSide_midSection_text {
