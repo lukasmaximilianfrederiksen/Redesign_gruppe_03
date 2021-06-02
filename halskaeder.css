@@ -37,6 +37,7 @@ body {
     grid-column: 2/3;
     color: white;
     text-align: center;
+    margin: 100px;
   }
 
   #halskaeder_section1 {
@@ -48,18 +49,20 @@ body {
   .produktbillede {
     grid-column: 1/5;
     grid-row: 1/6;
+    margin: 20px;
   }
 
   #produkttekst1 {
     grid-column: 5/8;
     grid-row: 1/5;
-    padding: 60px;
+    padding: 65px;
     color: white;
   }
 
   .modelbillede {
     grid-column: 4/8;
     grid-row: 4/9;
+    margin: 25px;
   }
 
   /* ---- section 2 ---- */
@@ -75,15 +78,22 @@ body {
     grid-row: 1/4;
     padding: 60px;
     color: white;
+    margin: 70px;
   }
 
   .produktbillede2 {
     grid-column: 4/8;
     grid-row: 1/6;
+    margin: 50px;
   }
 
   .modelbillede2 {
     grid-column: 1/5;
     grid-row: 4/8;
+    margin: 35px;
+  }
+
+  #produkttekst1 {
+    margin: 50px;
   }
 }
