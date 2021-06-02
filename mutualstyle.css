@@ -36,43 +36,6 @@ img {
 
 /*********** Header ***********/
 
-header {
-  display: flex;
-  background-color: #202020;
-  align-items: baseline;
-  height: 8vh;
-  position: sticky;
-}
-
-header ul {
-  text-decoration: none;
-}
-
-header nav ul {
-  display: flex;
-  padding-bottom: 0.5rem;
-  gap: 35px;
-  /* overflow-x: auto; */
-  font-size: 16px;
-}
-
-header ul a {
-  text-decoration: none;
-  list-style: none;
-  color: white;
-}
-
-nav ul li {
-  display: inline-block;
-  /* margin: 0 20px; */
-  position: relative;
-}
-
-nav {
-  justify-content: space-between;
-  /* padding: 15px; */
-}
-
 /*.... Hover....*/
 
 header nav ul li::after {
@@ -187,7 +150,10 @@ h4 {
 @media (min-width: 600px) {
   header {
     display: flex;
-    align-items: baseline;
+  }
+  nav {
+    display: flex;
+    justify-content: end;
   }
 }
 
