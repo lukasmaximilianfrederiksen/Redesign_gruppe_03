@@ -164,7 +164,7 @@ h4 {
 }
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   /* margin: 5%; */
   color: white;
 }
@@ -229,6 +229,10 @@ h4 {
 @media (min-width: 600px) {
   .dropdown-content {
     top: 14vw;
+  }
+
+  p {
+    font-size: 15px;
   }
 }
 
@@ -338,7 +342,7 @@ h4 {
   }
 
   p {
-    font-size: 19px;
+    font-size: 16px;
   }
   footer h2 {
     font-size: 30px;

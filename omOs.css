@@ -36,6 +36,16 @@ video {
     box-shadow: 5px 10px 10px 8px rgba(0, 0, 0, 0.2);
   }
 
+  #second_section {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #third_section {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
   #first_section {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -69,25 +79,24 @@ video {
 
   #second_section {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 45px;
-
     padding-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
     margin-bottom: 0;
   }
   #second_section img {
-    grid-area: 1 / 2 / 3 / 3;
+    grid-column: 2;
+    margin-bottom: 5%;
+    height: 70%;
   }
 
   #second_section h2 {
-    grid-area: 1 / 1 / 2 / 2;
+    grid-column: 1;
     text-align: left;
   }
   #second_section p {
     line-height: 35px;
+    grid-column: 1;
   }
 
   #billede {
@@ -100,9 +109,7 @@ video {
 
     grid-column-gap: 45px;
 
-    padding-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: -20vh;
   }
   #third_section p {
     grid-area: 1 / 2 / 3 / 3;
@@ -110,5 +117,7 @@ video {
   }
   #video_overskrift {
     text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 7vh;
   }
 }
