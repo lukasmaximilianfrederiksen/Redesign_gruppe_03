@@ -1,13 +1,22 @@
-window.addEventListener("load", sidenVises);
+const Knap = document.querySelector("#burger_knap");
+const listeLinks = document.querySelector(".navbar_links");
 
-function sidenVises() {
-  console.log("sidenVises");
+Knap.addEventListener("click", toggleMenu);
 
-  document.querySelector("#burger_knap").addEventListener("click", toogleMenu);
+function toggleMenu() {
+  console.log("toggleMenu");
+  listeLinks.classList.toggle("skjult");
 }
 
-function toogleMenu() {
-  console.log("toogleMenu");
+// function sidenVises() {
+//   console.log("sidenVises");
 
-  document.querySelector("#menu").classList.toggle("hidden");
-}
+//   document.querySelector("#burger_knap").addEventListener("click", toogleMenu);
+// }
+
+// function toogleMenu() {
+//   console.log("toogleMenu");
+
+//   document.querySelector("#menu").classList.toggle("hidden");
+
+// }
