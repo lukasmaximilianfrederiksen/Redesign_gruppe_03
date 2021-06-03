@@ -40,9 +40,11 @@ img {
   display: flex;
 } */
 
-/*.... Burger menu..*/
+/*.... ResponsivBurger menu..*/
 
 /* Løsning fundet på: https://www.w3schools.com/howto/howto_css_menu_icon.asp */
+/*Peters oplæg*/
+/* https://www.youtube.com/watch?v=At4B7A4GOPg&t=314s */
 
 #burger_knap {
   position: absolute;
