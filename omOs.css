@@ -7,6 +7,10 @@ p {
   color: #fff;
 }
 
+#third_section img {
+  max-height: 80%;
+}
+
 video {
   width: 100%;
   height: auto;
@@ -50,7 +54,7 @@ video {
     padding: 30px;
     border-radius: 35px;
     background-color: #2d4137;
-    opacity: 51%;
+    opacity: 65%;
   }
 
   #first_section p {
