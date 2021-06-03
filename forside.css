@@ -30,8 +30,8 @@ img {
 }
 
 h2 {
-  padding-top: 10%;
   color: white;
+  margin: 5%;
 }
 
 p {
@@ -54,9 +54,48 @@ p {
 .Forside_bottomSection {
   margin-top: 10%;
 }
+.Forside_tekst_topSection a {
+  text-decoration: none;
+}
+.Forside_tekst_topSection a {
+  color: white;
+}
 
 /* 586 PIXEL SKIFTER HEADER tekst */
-@media (min-width: 580px) {
+@media (min-width: 600px) {
+  .Forside_midSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .Forside_leftSide_midSection_text {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .Forside_leftSide_midSection_text p {
+    margin-left: 0.5rem;
+  }
+
+  .Forside_leftSide_midSection_img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .Forside_rightSide_midSection_text {
+    margin-top: -3rem;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .Forside_rightSide_midSection_img {
+    grid-column: 2;
+    grid-row: 2;
+  }
 }
 
 @media (min-width: 800px) {
