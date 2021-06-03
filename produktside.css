@@ -4,7 +4,6 @@ h2 {
 }
 p {
   color: white;
-  margin: 20px;
 }
 body {
   margin: 0;
@@ -34,8 +33,10 @@ img {
   }
 
   .beskrivelse {
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 2/4;
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
   .produktbillede {
     grid-column: 4 / 8;
