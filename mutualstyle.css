@@ -166,8 +166,6 @@ p {
   color: white;
 }
 
-/* ............dropdown-menu.......... */
-
 /****************** Footer ********************/
 
 footer h2 {
@@ -191,6 +189,9 @@ footer {
 }
 .kontakt_wrapper {
   margin: 0 auto;
+}
+.kontakt {
+  margin: 5%;
 }
 
 .socialmedia_wrapper {
