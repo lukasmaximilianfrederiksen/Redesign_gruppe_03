@@ -38,7 +38,10 @@ body {
   color: white;
   text-align: center;
   margin: 50px;
-  color: goldenrod;
+}
+
+h3 {
+  margin: 20px;
 }
 
 @media (min-width: 600px) {
