@@ -4,6 +4,7 @@ h2 {
 }
 p {
   color: white;
+  margin: 20px;
 }
 body {
   margin: 0;
@@ -12,10 +13,6 @@ img {
   display: block;
   width: 100%;
   height: auto;
-}
-#prispinkprodukt {
-  margin: 20px;
-  color: white;
 }
 
 /* ------ desktop-version------- */
