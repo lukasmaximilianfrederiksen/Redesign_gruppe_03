@@ -13,6 +13,11 @@ img {
   width: 100%;
   height: auto;
 }
+#prispinkprodukt {
+  margin: 20px;
+  color: white;
+}
+
 /* ------ desktop-version------- */
 @media (min-width: 600px) {
   main {
@@ -45,6 +50,3 @@ img {
   }
 }
 /* Andet */
-#prispinkprodukt
-margin: 20px; 
-color: white;
