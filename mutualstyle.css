@@ -239,10 +239,11 @@ h4 {
 
   .navbar_links {
     width: 100%;
+    display: none;
   }
 
   .skjult {
-    display: none;
+    display: flex;
   }
 
   .navbar_links li {
