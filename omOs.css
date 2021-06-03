@@ -50,11 +50,11 @@ video {
     grid-row: 3 / span 2;
     grid-column: 6 / span 2;
     width: 320px;
-    height: 420px;
+    height: 455px;
     padding: 30px;
     border-radius: 35px;
     background-color: #2d4137;
-    opacity: 65%;
+    opacity: 100%;
   }
 
   #first_section p {
@@ -85,7 +85,7 @@ video {
     text-align: left;
   }
   #second_section p {
-    line-height: 25px;
+    line-height: 35px;
   }
 
   #billede {
@@ -104,7 +104,7 @@ video {
   }
   #third_section p {
     grid-area: 1 / 2 / 3 / 3;
-    line-height: 25px;
+    line-height: 35px;
   }
   #video_overskrift {
     text-align: center;
