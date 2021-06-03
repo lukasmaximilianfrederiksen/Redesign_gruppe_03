@@ -135,6 +135,9 @@ h1 {
   margin-left: 20px;
 }
 
+.brand_title a {
+  text-decoration: none;
+}
 /********* Tekst ***************/
 
 h1 {
@@ -166,6 +169,13 @@ p {
   color: white;
 }
 
+.Forside_tekst_topSection a {
+  text-decoration: none;
+}
+
+.Forside_tekst_topSection p {
+  text-decoration: none;
+}
 /****************** Footer ********************/
 
 footer h2 {

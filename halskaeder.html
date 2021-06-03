@@ -18,23 +18,29 @@
   <body>
     <header>
       <nav class="navbar">
-        <div class="h1Container">
-          <h1>jOUXli</h1>
+        <div class="brand_title"><h1>jOUXli</h1></div>
+
+        <div id="burger_knap">
+          <p>Menu</p>
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
 
         <div class="navbar_links">
-          <div id="burger_knap">
-            <p>Menu</p>
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-
           <ul id="menu" class="hidden">
-          <li><a href="index.html">Forside</a></li>
-            <li><a href="halskaeder.html">halskæder</a></li>
+            <li><a href="index.html">Forside</a></li>
+            <div class="dropdown">
+              <button class="dropbtn">Produkter</button>
+              <!-- <li><a href="#">Produkter</a></li> -->
+              <div class="dropdown-content">
+                <li><a href="halskaeder.html">Halskæder</a></li>
+                <li><a href="#">Ørestikker</a></li>
+                <li><a href="#">Armbånd</a></li>
+                <li><a href="#">Ringe</a></li>
+              </div>
+            </div>
             <li><a href="omOs.html">Om jOUXli</a></li>
-          </ul>
           </ul>
         </div>
       </nav>
