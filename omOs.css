@@ -2,7 +2,9 @@ h2 {
   text-align: center;
   color: #fff;
 }
-
+footer h2 {
+  text-align: start;
+}
 p {
   color: #fff;
 }
