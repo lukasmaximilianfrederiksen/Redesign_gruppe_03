@@ -118,23 +118,6 @@ img {
   position: relative;
 }
 
-/*.... Hover....*/
-
-.navbar ul li::after {
-  content: "";
-  height: 3px;
-  width: 0;
-  background: #fff;
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  transition: 0.4s;
-}
-
-.navbar ul li:hover::after {
-  width: 100%;
-}
-
 h1 {
   font-size: 40px;
   background-image: linear-gradient(
@@ -232,7 +215,13 @@ h4 {
 
 /* @media */
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
+  .dropdown-content {
+    top: 14vw;
+  }
+}
+
+@media (max-width: 800px) {
   #burger_knap {
     display: flex;
   }
@@ -268,9 +257,39 @@ h4 {
     width: 100%;
     display: flex;
   }
+
+  .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-content li a {
+    font-size: 15px;
+  }
+
+  .dropdown-content li :hover {
+    background-color: #3a3939;
+  }
+
+  .dropbtn {
+    display: flex;
+    justify-content: center;
+    left: 50vw;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0px 0px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   #burger_knap {
     display: none;
   }
@@ -331,7 +350,9 @@ h4 {
 
   .dropdown {
     float: left;
-    /* overflow: hidden; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
   }
   .dropdown .dropbtn {
     font-size: 20px;
@@ -353,10 +374,12 @@ h4 {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #1f1f1f;
     min-width: 60px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    /* z-index: 1; */
+    z-index: 1;
+    top: 8vw;
+    right: 8vw;
   }
 
   .dropdown-content a {
@@ -374,6 +397,28 @@ h4 {
   }
 
   .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*.... Hover....*/
+
+  .navbar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.4s;
+  }
+
+  .navbar ul li:hover::after {
+    width: 100%;
+  }
+
+  .skjultUnderMenu {
+    display: none;
   }
 }
