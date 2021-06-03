@@ -60,7 +60,7 @@ img {
   width: 35px;
   height: 5px;
   background-color: white;
-  margin: 6px 0;
+  margin: 4px 0;
   transition: 0.4s;
 }
 
@@ -81,7 +81,6 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
 }
 
 .navbar_links li {
@@ -99,19 +98,18 @@ img {
 #burger_knap {
   position: absolute;
 }
-
-.hidden {
-  display: none;
-  transform: translateX(100%);
+#burger_knap p {
+  font-size: 11px;
 }
+
+/* .hidden {
+  display: none;
+  transform: translateY(100%);
+} */
 
 #menu {
   transition: transform 0.3s;
-  transform-origin: right;
-}
-
-.brand_title {
-  margin: 0.5rem;
+  transform-origin: top;
 }
 
 .navbar ul li {
@@ -234,12 +232,49 @@ h4 {
 
 /* @media */
 
-@media (min-width: 500px) {
+@media (max-width: 600px) {
+  #burger_knap {
+    display: flex;
+  }
+
+  .navbar_links {
+    width: 100%;
+  }
+
+  .skjult {
+    display: none;
+  }
+
+  .navbar_links li {
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar_links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  /* #menu.hidden {
+    width: 100%;
+  } */
+
+  .navbar_links.active {
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media (min-width: 600px) {
   #burger_knap {
     display: none;
   }
 
-  #menu.hidden {
+  /* #menu.hidden {
     transform: translateX(0);
     opacity: 1;
   }
@@ -253,8 +288,7 @@ h4 {
 
   .navbar_links li {
     list-style: none;
-    font-size: 1.5rem;
-  }
+    font-size: 1.5rem; */
 }
 
 @media (min-width: 800px) {
